@@ -1,0 +1,70 @@
+# --------------------------------------------------
+#  Node / TypeScript  (both frontend + backend)
+# --------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+.pnpm-lock.yaml
+
+# --------------------------------------------------
+#  Environment & Secrets
+# --------------------------------------------------
+.env
+.env.*                # .env.development, .env.production, etc.
+*.env.local
+supabase/migrations/.supabase   # generated auth keys
+.supabase/
+
+# --------------------------------------------------
+#  Expo / React Native
+# --------------------------------------------------
+.expo/
+.expo-shared/
+*.expo
+web-build/
+dist/
+# iOS / Android native build artifacts (if ejected)
+ios/build/
+android/app/build/
+android/.gradle/
+*.iml
+.idea/
+*.xcodeproj/
+*.xcworkspace
+Pods/
+# Metro / cache
+.expo/*
+metro-cache/
+# Hermes bytecode & device logs
+*.hbc
+*.log
+
+# --------------------------------------------------
+#  TypeScript
+# --------------------------------------------------
+*.tsbuildinfo
+
+# --------------------------------------------------
+#  VS Code & other editors
+# --------------------------------------------------
+.vscode/
+*.swp
+*.swo
+
+# --------------------------------------------------
+#  macOS / Windows junk
+# --------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --------------------------------------------------
+#  Coverage & test outputs
+# --------------------------------------------------
+coverage/
+jest-html-reporters-*.html
+*.lcov
